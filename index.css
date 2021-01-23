@@ -1,0 +1,190 @@
+body { 
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #43464b;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 5px;
+  background-color: red;
+}
+
+@keyframes moveA {
+  0% {
+    transform: translate(55px, -55px);
+  }
+  8.33% {
+    transform: translate(55px, 0px);
+  }
+  100% {
+    transform: translate(55px, 0px);
+  }
+}
+
+.A {
+  transform: translate(55px, -55px);
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+  animation: moveA 3.6s linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes moveB {
+  0% {
+    transform: translate(0, 0);
+  }
+  8.33% {
+    transform: translate(0px, 55px);
+  }
+  16.66% {
+    transform: translate(55px, 55px);
+  }
+  25% {
+    transform: translate(55px, 0px);
+    background-color: #ffac81;
+    background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+  }
+  83.33% {
+    transform: translate(55px, 0px);
+    background-color: #ffac81;
+    background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+  }
+  91.66% {
+    transform: translate(55px, -55px);
+    background-color: #ffac81;
+    background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+  }
+  100% {
+    transform: translate(0px, -55px);
+    background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+  }
+}
+
+.B {
+  background-color: #f39f86;
+  background-image: linear-gradient(315deg, #f39f86 0%, #f9d976 74%);
+  animation: moveB 3.6s linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes moveC {
+  16.66% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(0, -55px);
+  }
+  33.33% {
+    transform: translate(55px, -55px);
+  }
+  41.66% {
+    transform: translate(55px, 0px);
+    background-color: #f42b03;
+    background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+  }
+  66.66% {
+    transform: translate(55px, 0px);
+    background-color: #f42b03;
+    background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+  }
+  75% {
+    transform: translate(55px, 55px);
+    background-color: #f42b03;
+    background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+  }
+  83.33% {
+    transform: translate(0px, 55px);
+background-color: #ffac81;
+  background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+  }
+  91.66% {
+    transform: translate(0px, 0px);
+background-color: #ffac81;
+  background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+  }
+  100% {
+    transform: translate(0px, 0px);
+background-color: #ffac81;
+  background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+  }
+}
+
+.C {
+  background-color: #ffac81;
+  background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+  animation: moveC 3.6s linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes moveD {
+  33.33% {
+    transform: translate(0, 0);
+  }
+  41.66% {
+    transform: translate(0, 55px);
+  }
+  50% {
+    transform: translate(55px, 55px);
+    background-color: #ee9617;
+    background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+  }
+  58.33% {
+    transform: translate(55px, 0px);
+    background-color: #ee9617;
+    background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+  }
+  100% {
+    transform: translate(55px, 0px);
+    background-color: #ee9617;
+    background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+  }
+}
+
+.D {
+  background-color: #f42b03;
+  background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+  animation: moveD 3.6s linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes moveE {
+  50% {
+    transform: translate(0, 0);
+  }
+  58.33% {
+    transform: translate(0, -55px);
+  }
+  66.66% {
+    transform: translate(-55px, -55px);
+    background-color: #f42b03;
+    background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+  }
+  75% {
+    transform: translate(-55px, 0px);
+    background-color: #f42b03;
+    background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+  }
+  100% {
+    transform: translate(-55px, 0px);
+    background-color: #f42b03;
+    background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+  }
+}
+
+.E {
+  background-color: #ee9617;
+  background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+  animation: moveE 3.6s linear;
+  animation-iteration-count: infinite;
+}
